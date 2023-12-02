@@ -7,6 +7,8 @@ use App\Controllers\Authenticaton;
  * @var RouteCollection $routes
  */
 
- $basePath = "/mobile-store";
+$basePath = "/mobile-store";
 
-$routes->get($basePath.'/authentication', [Authenticaton::class, 'login']);
+$routes->get($basePath . '/authentication', [Authenticaton::class, 'OnGetLogin']);
+
+$routes->post($basePath.'/authentication', [Authenticaton::class,'OnPostLogin']);
