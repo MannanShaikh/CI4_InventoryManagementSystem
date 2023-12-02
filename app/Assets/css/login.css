@@ -1,0 +1,60 @@
+body
+{
+  background-color: #3b3b3b;
+}
+.btn-primary
+{
+  background-color: #111111 !important;
+  color: #6CCA02;
+  border-color: #6CCA02;
+  border-width: 3px;
+  border-style: solid;
+}
+label
+{
+  color: #6CCA02;
+}
+.btn-primary:hover
+{
+    color: #111111;
+    background-color: #9ffa38 !important;
+    border-color: #9ffa38;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 0 0 30px #9ffa38;
+}
+.container
+{
+  margin-top: 10%;
+  box-shadow: 0px 100px 100px #111111;
+  padding: 5%;
+  background: #111111 !important;
+  width: 50%;
+}
+@media screen and (max-width: 1000px)
+{
+  .container
+  {
+    width: 100%;
+    margin-top: 40%;
+  }
+}
+.btn-primary
+{
+    border-radius: 0;
+}
+input
+{
+  color: #FFFFFF !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: #6CCA02 !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 2px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+::selection {
+  color: #111111;
+  background: #6CCA02;
+}

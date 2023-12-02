@@ -1,0 +1,58 @@
+body
+{
+  background-color: #3B3B3B !important;
+}
+.card
+{
+    background: #111111 !important;
+}
+.card-title
+{
+    color: #6CCA02;
+}
+.card-text
+{
+    color: #FFFFFF;
+}
+::selection 
+{
+    color: #111111;
+    background: #6CCA02;
+}
+.btn-primary
+{
+    border-radius: 0;
+    color: #111111;
+    background-color: #6CCA02 !important;
+    border-color: #6CCA02;
+    border-width: 3px;
+    border-style: solid;
+}
+.btn-primary:hover
+{
+    background-color: #111111 !important;
+    color: #6CCA02 !important;
+    border-color: #6CCA02;
+    border-width: 3px;
+    border-style: solid;
+}
+.container
+{
+  margin-top: 3%;
+  box-shadow: 0px 80px 80px #000000;
+  padding: 3%;
+  background: #111111 !important;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 1000px)
+{
+  .container
+  {
+    width: 100%;
+    margin-top: 40%;
+  }
+}
+.table
+{
+  color: #6CCA02;
+}

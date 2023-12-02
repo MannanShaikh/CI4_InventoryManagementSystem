@@ -1,0 +1,17 @@
+body
+{
+  background-color: #3B3B3B !important;
+}
+.card
+{
+    background: #111111 !important;
+}
+.card-body
+{
+    color: #6CCA02;
+}
+
+::selection {
+    color: #111111;
+    background: #6CCA02;
+  }

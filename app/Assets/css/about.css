@@ -1,0 +1,21 @@
+body
+{
+    background-color: #111111 !important;
+}
+h3, h5, b
+{
+    color:#6CCA02;
+}
+p, ol
+{
+    color: #FFFFFF;
+}
+p::selection
+{
+    color: #FFFFFF;
+    background: #6CCA02;
+}
+::selection {
+    color: #111111;
+    background: #6CCA02;
+  }
