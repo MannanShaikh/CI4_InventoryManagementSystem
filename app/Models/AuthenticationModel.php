@@ -6,5 +6,10 @@ use CodeIgniter\Model;
 
 class AuthenticationModel extends Model
 {
-    protected $table = "";
+    protected $table = "employees";
+
+    public function Authenticate($userName, $password)
+    {
+        return $this->where(['AadharNumber' => $userName])->where(['Password' => $password])->first();
+    }
 }

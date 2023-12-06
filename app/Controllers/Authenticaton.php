@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\AuthenticationModel;
+use CodeIgniter\Exceptions\PageNotFoundException;
+
 class Authenticaton extends BaseController
 {
     public function OnGetLogin()
@@ -11,6 +14,15 @@ class Authenticaton extends BaseController
 
     public function OnPostLogin()
     {
+        $model = model(AuthenticationModel::class);
+
+        $username = $this->request->getVar('aadhar');
+        $password = $this->request->getVar('pwd');
+
+        if (empty($username) || empty($password)) {
+            throw new PageNotFoundException('');
+        } else {
+        }
     }
 
     public function OnGetForgotPassword()

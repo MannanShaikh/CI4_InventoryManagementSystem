@@ -17,50 +17,52 @@
   <script src="../script/validation.js"></script>
 
   <!-- ANIMATE CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
   <div class="container animate__animated animate__backInDown">
-    <div class="col-md-12">
-      <div class="form-group">
-        <label for="aadhar"><b>AADHAR NUMBER</b></label>
-        <input type="number" class="form-control" id="aadhar" onblur="AadhaarLength(this.value)">
+    <form action="/mobile-store/authentication/post" method="post">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="aadhar"><b>AADHAR NUMBER</b></label>
+          <input type="number" class="form-control" id="aadhar" name="aadhar" onblur="AadhaarLength(this.value)">
+        </div>
+        <div class="form-group">
+          <label for="pwd"><b>PASSWORD</b></label>
+          <input type="password" class="form-control" id="pwd" name="pwd" onblur="Password(this.value,this.id)">
+          <span toggle="#password" class="fa fa-eye toggle-password" onclick="HideShow()"></span>
+        </div>
+        <button type="submit" class="btn btn-primary"><b>LOGIN</b></button>
+        <a href="forgotPassword.html" style="float: right;">Cannot Login ?</a>
       </div>
-      <div class="form-group">
-        <label for="pwd"><b>PASSWORD</b></label>
-        <input type="password" class="form-control" id="pwd" onblur="Password(this.value,this.id)">
-        <span toggle="#password" class="fa fa-eye toggle-password" onclick="HideShow()"></span>
-      </div>
-      <button onclick="Authenticate()" type="submit" class="btn btn-primary"><b>LOGIN</b></button>
-      <a href="forgotPassword.html" style="float: right;">Cannot Login ?</a>
-    </div>
+    </form>
   </div>
 
-      <!-- The Modal -->
-      <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title"></h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-                </div>
-
-            </div>
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
     </div>
+  </div>
 
 </body>
 
